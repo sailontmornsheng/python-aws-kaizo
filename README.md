@@ -5,8 +5,11 @@ This Python script uses Boto3 to fetch information about running EC2 instances o
 ## Prerequisites
 
 - Python 3.x installed
-- Boto3 library installed (`pip install boto3`)
-- Pandas library installed (`pip install pandas`)
+
+Run the following command to install required packages:
+```
+pip install -r requirements.txt
+```
 
 ## Usage
 
