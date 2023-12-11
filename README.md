@@ -6,10 +6,7 @@ This Python script uses Boto3 to fetch information about running EC2 instances o
 
 - Python 3.x installed
 
-Run the following command to install required packages:
-```
-pip install -r requirements.txt
-```
+
 
 ## Usage
 
@@ -25,15 +22,21 @@ pip install -r requirements.txt
     cd aws-ec2-instance-fetcher
     ```
 
-3. Run the script:
+3. Install Required Packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Install Required Packages:
 
     ```bash
     python ec2_instance_fetcher.py
     ```
 
-4. Enter your AWS Access Key, AWS Secret Key, and AWS Region as prompted.
+5. Enter your AWS Access Key, AWS Secret Key, and AWS Region as prompted.
 
-5. The script will fetch information about running EC2 instances and export it to an Excel file with a name like `running_instances_<region>.xlsx`.
+6. The script will fetch information about running EC2 instances and export it to an Excel file with a name like `running_instances_<region>.xlsx`.
 
 ## Note
 
