@@ -44,9 +44,48 @@ This Python script uses Boto3 to fetch information about running EC2 instances o
 
 - The script stores credentials in memory and doesn't persist them. For production use, consider using AWS Identity and Access Management (IAM) roles.
 
+<br>
+<br>
+
+_______________
+
+# EC2 Instances Information Retrieval Script
+
+This Python script interacts with the AWS CLI and the `boto3` library to fetch information about EC2 instances. The script prompts the user for AWS credentials or profile, the AWS region to fetch EC2 instances, and the desired output format (Excel or JSON). The retrieved data includes details such as instance name, instance ID, state, instance type, region, security groups, and associated key pairs.
+
+## Prerequisites
+
+- Python 3
+- AWS CLI installed and configured with necessary credentials (if not using a profile)
+
+## Installation
+
+1. Install the required Python packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. Run the script:
+
+    ```bash
+    python aws-ec2-instance-fetcher-2.py
+    ```
+
+## Usage
+
+Follow the prompts to provide AWS credentials, choose an AWS profile, select the AWS region, and specify the desired output format. The script will fetch and display information about EC2 instances based on your inputs.
+
+## Output
+
+The script exports the retrieved data in either Excel or JSON format, naming the output files based on the specified AWS region and the current date.
+
+- Excel Output: `ec2_instances_region_date.xlsx`
+- JSON Output: `ec2_instances_region_date.json`
+
 ## Contributing
 
-Feel free to contribute by opening issues or submitting pull requests.
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 ## License
 
